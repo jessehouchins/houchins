@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>The Houchins Family</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+      ;(function(){
+
+        var $html = $('html')
+        var defaultWidth = 1400
+        var defaultHeight = 700
+        var defaultRatio = defaultWidth/defaultHeight
+        var defaultFontSize = 10
+        var phoneFontSize = 10
+
+        function setScale(){
+          var w = window.innerWidth
+          var h = window.innerHeight
+          var vertPhone = w < 768 && w < h
+          var currentRatio = w/h
+          var setByWidth = currentRatio < defaultRatio
+          var scale = setByWidth ? w/defaultWidth : h/defaultHeight
+          var fontSize = vertPhone ? phoneFontSize : scale * defaultFontSize
+
+          $html.css('font-size', fontSize + 'px')
+          $html.toggleClass('phone', vertPhone)
+        }
+
+        $(window).on('resize', setScale)
+        setScale()
+
+      })();
+    </script>
+  </head>
+  <body>
+
+    <div class="jh-page">
+      <img class="jh-logo" src="images/logo.png" />
+
+      <div class="jh-cards">
+        <div class="jh-card jen">
+          <img class="jh-photo" src="images/jen.jpg" />
+          <h1 class="jh-name">Jen Houchins, <span class="nowrap">PhD, RD</span></h1>
+          <ul class="jh-links">
+            <li><a class="fa fa-envelope-square" href="mailto:jen@houchins.net"></a></li>
+            <li><a class="fa fa-linkedin-square" href="https://www.linkedin.com/pub/jenny-houchins-phd-rd/7/a65/473"></a></li>
+            <li><a class="fa fa-facebook-square" href="https://www.facebook.com/jenny.houchins.3"></a></li>
+            <li><a class="fa fa-pinterest-square" href="https://www.pinterest.com/jenhouchins"></a></li>
+          </ul>
+        </div>
+
+        <div class="jh-card jesse">
+          <img class="jh-photo" src="images/jesse.jpg" />
+          <h1 class="jh-name">Jesse Houchins</h1>
+          <ul class="jh-links">
+            <li><a class="fa fa-envelope-square" href="mailto:jesse@houchins.net"></a></li>
+            <li><a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jessehouchins"></a></li>
+            <li><a class="fa fa-facebook-square" href="https://www.facebook.com/jesse.d.houchins"></a></li>
+            <li><a class="fa fa-twitter-square" href="https://twitter.com/jessehouchins"></a></li>
+            <li><a class="fa fa-github-square" href="https://github.com/jessehouchins"></a></li>
+          </ul>
+        </div>
+
+        <div class="jh-card joel">
+          <img class="jh-photo" src="images/joel.jpg" />
+          <h1 class="jh-name">Joel</h1>
+          <ul class="jh-links">
+            <li><a class="fa fa-envelope-square" href="mailto:joel@houchins.net"></a></li>
+            <li><a class="fa fa-facebook-square" href="https://www.facebook.com/joel.houchins"></a></li>
+          </ul>
+        </div>
+
+        <div class="jh-card jacqueline">
+          <img class="jh-photo" src="images/jacqueline.jpg" />
+          <h1 class="jh-name">Jacqueline</h1>
+          <ul class="jh-links">
+            <li><a class="fa fa-envelope-square" href="mailto:jacqueline@houchins.net"></a></li>
+            <li><a class="fa fa-facebook-square" href="https://www.facebook.com/jacqueline.houchins"></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

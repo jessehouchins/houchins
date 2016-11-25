@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'Sylfaen';
+  src: url('fonts/Sylfaen.otf') format('otf'),
+       url('fonts/Sylfaen.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #869180;
+  background: #eff0ee;
+  font-family: Sylfaen;
+  font-size: 10px;
+}
+
+body {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a {
+  cursor: pointer;
+  color: #869180;
+  text-decoration: none;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
+a:hover { color: #27506f; }
+
+.nowrap { white-space: nowrap; }
+
+.jh-page {
+  z-index: 0;
+  position: relative;
+  padding: 4em;
+  border-top: 1px solid #d0d3cd;
+  border-bottom: 1px solid #d0d3cd;
+  box-shadow: 0 0 1px 1px #FFF;
+}
+
+.jh-page:before {
+  z-index: -1;
+  opacity: .8;
+  content: "";
+  display: block;
+  height: 5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+.jh-page:after {
+  z-index: -1;
+  opacity: .8;
+  content: "";
+  display: block;
+  height: 5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+
+.jh-logo {
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  width: 34em;
+  margin-left: -17em;
+}
+
+.jh-cards {
+  display: inline-block;
+  margin: auto;
+  overflow: hidden;
+}
+
+.jh-card {
+  width: 35em;
+  position: relative;
+  margin: 0 0 0 4em;
+  display: block;
+  float: left;
+  background: #FFF;
+  overflow: hidden;
+}
+
+.jh-card.jen {
+  margin: 0;
+}
+
+.jh-card.jesse {
+  float: right;
+}
+
+.jh-card.joel,
+.jh-card.jacqueline {
+  margin-top: 12em;
+  width: 18em;
+}
+
+.jh-card .jh-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+  margin-top: -100%;
+  background: #869180;
+}
+
+.jh-card .jh-name {
+  color: #27506f;
+  font-weight: normal;
+  font-size: 2.8em;
+  padding: 2.6em 1em 1em;
+}
+
+.jh-card .jh-links {
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-top: 100%;
+  top: 3em;
+}
+
+.jh-card .jh-links li {
+  font-size: 2.4em;
+  display: inline;
+  margin: .1em;
+}
+
+/*** PHONE STYLES ***/
+
+.phone .jh-page {
+  padding: 35% 2em 2em;
+}
+
+.phone .jh-logo {
+  position: absolute;
+  top: 2em;
+  left: 10%;
+  width: 80%;
+  margin-left: 0;
+  margin-top: 6%;
+}
+
+.phone .jh-cards {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+
+.phone .jh-card {
+  width: 100% !important;
+  position: relative;
+  margin: 2em 0 0 !important;
+  display: block;
+  float: none !important;
+  background: #FFF;
+}
+
+.jh-card .jh-links li {
+  font-size: 3em;
+}
+
+

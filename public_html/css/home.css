@@ -41,7 +41,7 @@ a:hover { color: #27506f; }
 .jh-page {
   z-index: 0;
   position: relative;
-  padding: 4em;
+  padding: 16em 4em 4em;
   border-top: 1px solid #d0d3cd;
   border-bottom: 1px solid #d0d3cd;
   box-shadow: 0 0 1px 1px #FFF;
@@ -98,7 +98,7 @@ a:hover { color: #27506f; }
 }
 
 .jh-card {
-  width: 35em;
+  width: 30em;
   position: relative;
   margin: 0 0 0 4em;
   display: block;
@@ -185,5 +185,3 @@ a:hover { color: #27506f; }
 .jh-card .jh-links li {
   font-size: 3em;
 }
-
-

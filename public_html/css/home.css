@@ -100,15 +100,11 @@ a:hover { color: #27506f; }
 .jh-card {
   width: 30em;
   position: relative;
-  margin: 0 0 0 4em;
+  margin: 0;
   display: block;
   float: left;
   background: #FFF;
   overflow: hidden;
-}
-
-.jh-card.jen {
-  margin: 0;
 }
 
 .jh-card.jesse {
